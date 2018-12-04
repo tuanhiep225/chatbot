@@ -18,6 +18,9 @@ import com.xmartech.chatbot.model.User;
 public class DemoControler {
 	@GetMapping("/get-object")
 	public User getObject(String name) {
-		return User.builder().name("Nguyễn Tuấn Hiệp").phone("0984599264").email("tuanhiep225@gmail.com").build();
+		return User.builder().name("Nguyễn Tuấn Hiệp").phone("0984599264").email("tuanhiep225@gmail.com").
+				gender("Nam")
+				.text("Xin chào, đây là API")
+			.build();
 	}
 }
