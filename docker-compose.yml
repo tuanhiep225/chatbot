@@ -1,0 +1,41 @@
+version: "3.4"
+
+services:
+  
+  # sodo-xmarketing
+  sodo-xmarketing:
+    container_name: "xmartech-chatbot"
+    image: xmartech/xmartech-chatbot
+    links:
+      - xmartech-mongodb
+    ports:
+      - 8080:8080
+    volumes:
+      - .:/opt/WORK_SPACE/export/
+      - /opt/logs/:/opt/WORK_SPACE/xmartech/data/log/
+    environment:
+      SPRING_PROFILES_ACTIVE: ci
+      MONGODB_HOST: xmartech-mongodb
+      
+  #MongoDB
+  xmarketing-mongodb:
+    container_name: "xmartech-mongodb"
+    image: mongo:3.4.10
+    ports:
+     - 27018:27018
+    command: mongod --replSet rs0 --shardsvr --port 27018 --nojournal --oplogSize 16 --noprealloc --smallfiles
+    restart: always
+  
+  # This configures the MongoDB replicaset  
+  xmarketing-mongosetup:
+    container_name: "xmartech-mongosetup"
+    image: mongo:3.4.10
+    depends_on:
+      - xmartech-mongodb
+    links:
+      - xmarketing-xmartech-mongodb
+    volumes:
+      - ./scripts:/scripts
+    environment:
+      - MONGODB=xmartech-mongodb
+    entrypoint: [ "/bin/bash", "/scripts/mongosetup.sh" ]
