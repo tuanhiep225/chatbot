@@ -22,7 +22,7 @@ services:
     container_name: "xmartech-mongodb"
     image: mongo:3.4.10
     ports:
-     - 27018:27018
+     - 27017:27017
     command: mongod --replSet rs0 --shardsvr --port 27018 --nojournal --oplogSize 16 --noprealloc --smallfiles
     restart: always
   
