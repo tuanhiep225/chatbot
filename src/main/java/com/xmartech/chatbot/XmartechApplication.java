@@ -10,11 +10,6 @@ import org.springframework.scheduling.annotation.EnableAsync;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @SpringBootApplication
-@EnableSwagger2
-@ComponentScan(basePackages = {"com.sodo.xmarketing"})
-@EnableMongoRepositories({"com.sodo.xmarketing.repository"})
-@EnableAutoConfiguration(exclude = {})
-@EnableAsync
 public class XmartechApplication {
 
   public static void main(String[] args) {

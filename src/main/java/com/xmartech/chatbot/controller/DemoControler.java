@@ -16,6 +16,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class DemoControler {
 	@GetMapping("/get-object")
 	public String getObject(String name) {
-		return "";
+		return "hello";
 	}
 }
