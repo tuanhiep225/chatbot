@@ -33,7 +33,7 @@ services:
     depends_on:
       - xmartech-mongodb
     links:
-      - xmarketing-xmartech-mongodb
+      - xmartech-mongodb
     volumes:
       - ./scripts:/scripts
     environment:
