@@ -22,7 +22,7 @@
 		<springfox.version>2.8.0</springfox.version>
 		<java.version>1.8</java.version>
 		<logback.logstash.version>4.11</logback.logstash.version>
-		<docker.image.prefix>sodo</docker.image.prefix>
+		<docker.image.prefix>xmartech</docker.image.prefix>
 	</properties>
 
 	<dependencies>
