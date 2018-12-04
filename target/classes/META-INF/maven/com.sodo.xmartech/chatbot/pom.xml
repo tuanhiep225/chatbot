@@ -6,7 +6,7 @@
 	<version>1.0.0</version>
 	<packaging>jar</packaging>
 
-	<name>sodo-xmartech</name>
+	<name>xmartech-chatbot</name>
 	<description>X Martech</description>
 
 	<parent>

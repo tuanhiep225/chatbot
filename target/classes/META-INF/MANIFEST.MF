@@ -1,10 +1,10 @@
 Manifest-Version: 1.0
-Implementation-Title: sodo-xmartech
+Implementation-Title: xmartech-chatbot
 Implementation-Version: 1.0.0
 Built-By: tuanhiep225
-Implementation-Vendor-Id: com.sodo.xmartech
+Implementation-Vendor-Id: com.xmartech.chatbot
 Build-Jdk: 1.8.0_162
 Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
- ot-starter-parent/chatbot
+ ot-starter-parent/xmartech-chatbot
 Created-By: Maven Integration for Eclipse
 

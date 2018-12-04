@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   
 	<groupId>com.xmartech.chatbot</groupId>
-	<artifactId>xmartech-chatbot</artifactId>
+	<artifactId>chatbot</artifactId>
 	<version>1.0.0</version>
 	<packaging>jar</packaging>
 
