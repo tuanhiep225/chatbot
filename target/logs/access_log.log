@@ -46,3 +46,6 @@
 0:0:0:0:0:0:0:1 - - [04/Dec/2018:16:38:31 +0700] "GET /api/v1/demo/get-object HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
 0:0:0:0:0:0:0:1 - - [04/Dec/2018:16:39:17 +0700] "GET /api/v1/demo/get-object HTTP/1.1" 200 31 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
 0:0:0:0:0:0:0:1 - - [04/Dec/2018:16:39:17 +0700] "GET /favicon.ico HTTP/1.1" 200 946 "http://localhost:8081/api/v1/demo/get-object" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
+0:0:0:0:0:0:0:1 - - [04/Dec/2018:16:53:45 +0700] "GET /api/v1/demo/get-object HTTP/1.1" 200 107 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
+0:0:0:0:0:0:0:1 - - [04/Dec/2018:16:58:25 +0700] "GET /api/v1/demo/get-object HTTP/1.1" 200 107 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
+0:0:0:0:0:0:0:1 - - [04/Dec/2018:18:33:49 +0700] "GET /api/v1/demo/get-object HTTP/1.1" 200 74 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36"
