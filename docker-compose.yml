@@ -3,7 +3,7 @@ version: "3.4"
 services:
   
   # sodo-xmarketing
-  sodo-xmarketing:
+  xmartech-chatbot:
     container_name: "xmartech-chatbot"
     image: xmartech/xmartech-chatbot
     links:
@@ -18,7 +18,7 @@ services:
       MONGODB_HOST: xmartech-mongodb
       
   #MongoDB
-  xmarketing-mongodb:
+  xmartech-mongodb:
     container_name: "xmartech-mongodb"
     image: mongo:3.4.10
     ports:
@@ -27,7 +27,7 @@ services:
     restart: always
   
   # This configures the MongoDB replicaset  
-  xmarketing-mongosetup:
+  xmartech-mongosetup:
     container_name: "xmartech-mongosetup"
     image: mongo:3.4.10
     depends_on:
