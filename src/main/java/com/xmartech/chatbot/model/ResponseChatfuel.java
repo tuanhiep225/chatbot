@@ -19,5 +19,5 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class ResponseChatfuel {
-	private List<Text> message;
+	private List<Text> messages;
 }

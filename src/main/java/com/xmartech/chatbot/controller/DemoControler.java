@@ -30,6 +30,6 @@ public class DemoControler {
 		texts.add(Text.builder().text("Tuấn Hiệp1").build());
 		texts.add(Text.builder().text("Tuấn Hiệp2").build());
 		
-		return ResponseChatfuel.builder().message(texts).build();
+		return ResponseChatfuel.builder().messages(texts).build();
 	}
 }
