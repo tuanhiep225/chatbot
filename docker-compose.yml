@@ -14,7 +14,6 @@ services:
       - .:/opt/WORK_SPACE/export/
       - /opt/logs/:/opt/WORK_SPACE/xmartech/data/log/
     environment:
-      SPRING_PROFILES_ACTIVE: ci
       MONGODB_HOST: xmartech-mongodb
       
   #MongoDB
