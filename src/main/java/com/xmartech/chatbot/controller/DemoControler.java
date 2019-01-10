@@ -8,6 +8,7 @@ import java.util.List;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.xmartech.chatbot.model.ResponseChatfuel;
@@ -22,8 +23,7 @@ import com.xmartech.chatbot.model.User;
 @RequestMapping("/api/v1/demo")
 public class DemoControler {
 	@GetMapping("/get-object")
-	public ResponseChatfuel getObject(String name) {
-		
+	public ResponseChatfuel getObject(@RequestParam("name") String name) {
 		List<Text> texts = new ArrayList<Text>();
 		
 		texts.add(Text.builder().text("Tuấn Hiệp").build());
