@@ -57,6 +57,7 @@ public class ChatBotController {
 		attributes.put("linkgioithieu", linkgioithieu);
 		LOGGER.info(data.toString());
 		LOGGER.info(linkgioithieu);
+		
 		return ResponseChatfuel.builder().set_attributes(attributes).build();
 	}
 }
