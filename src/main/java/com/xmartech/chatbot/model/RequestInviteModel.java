@@ -26,4 +26,11 @@ public class RequestInviteModel  {
 	private String bot_link;
 	private String messid;
 	private String ref;
+	@Override
+	public String toString() {
+		return "RequestInviteModel [hoten=" + hoten + ", thamgialuc=" + thamgialuc + ", bot_id=" + bot_id
+				+ ", bot_token=" + bot_token + ", bot_link=" + bot_link + ", messid=" + messid + ", ref=" + ref + "]";
+	}
+	
+	
 }
