@@ -1,7 +1,7 @@
 package com.xmartech.chatbot.service.impl;
 
-import org.jvnet.hk2.annotations.Service;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.xmartech.chatbot.model.InformationRequestModel;
 import com.xmartech.chatbot.repository.InformationRequestModelRepository;

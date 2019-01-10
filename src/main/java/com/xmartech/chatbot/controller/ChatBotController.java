@@ -42,11 +42,12 @@ import com.xmartech.chatbot.utils.ClientHelperUtils;
 public class ChatBotController {
 	@Autowired
 	private InformationRequestModelService service;
-	private Client client;
 	
-	public ChatBotController() throws Exception {
-		client = ClientHelperUtils.createClient();
-	}
+//	private Client client;
+//	
+//	public ChatBotController() throws Exception {
+//		client = ClientHelperUtils.createClient();
+//	}
 	private static final Log LOGGER = LogFactory.getLog(ChatBotController.class);
 	@GetMapping("/gender")
 	public ResponseChatfuel getGender(@RequestParam(value="gender", required= false) String gender) {
