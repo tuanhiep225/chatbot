@@ -8,12 +8,18 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import javax.ws.rs.Consumes;
+import javax.ws.rs.Produces;
+
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -43,8 +49,8 @@ public class ChatBotController {
 		return ResponseChatfuel.builder().set_attributes(resutl_gender).build();
 	}
 	
-	@PostMapping("/request-invite")
-	public ResponseChatfuel postObject(@RequestBody RequestInviteModel data) {
+	@RequestMapping(value="/request-invite", method= RequestMethod.POST)
+	public ResponseChatfuel postObject(RequestInviteModel data) {
 		
 		String linkgioithieu = "https://"+data.getBot_link()+"?ref=viral"+data.getMessid();
 		Map attributes = new HashMap<String, String>();
