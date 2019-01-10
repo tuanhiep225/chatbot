@@ -4,6 +4,7 @@
 package com.xmartech.chatbot.model;
 
 import java.util.List;
+import java.util.Map;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -20,4 +21,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class ResponseChatfuel {
 	private List<Text> messages;
+	private Map<String, String> set_attributes;
+	private List<String> redirect_to_blocks;
+	
 }
